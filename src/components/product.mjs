@@ -1,4 +1,4 @@
-import Property from "./property.mjs";
+import Property from "#components/property.mjs";
 
 const Product = (product) => {
 

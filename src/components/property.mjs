@@ -1,4 +1,4 @@
-import Icon from "./icon.mjs"
+import Icon from "#components/icon.mjs"
 
 const Property = (prop, value) => {
 
