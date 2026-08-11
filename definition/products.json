@@ -1,0 +1,321 @@
+{
+  "elements": [
+    {
+      "image": "anillo-aro-liso-oro-rosa-acero.webp",
+      "name": "Anillo Aro Liso Oro Rosa Acero Inoxidable",
+      "price": "0.00",
+      "properties": {
+        "type": "Anillo",
+        "color": "Oro Rosa",
+        "talla": [7, 8],
+        "material": "Acero Inoxidable"
+      }
+    },
+    {
+      "image": "anillo-chunky-ajustable-chapa.webp",
+      "name": "Anillo Chunky Ajustable Chapa de Oro",
+      "price": "0.00",
+      "properties": {
+        "type": "Anillo",
+        "color": "Plateado",
+        "talla": "Ajustable",
+        "material": "Chapa de Oro"
+      }
+    },
+    {
+      "image": "anillo-chunky-dorado-ajustable-chapa.webp",
+      "name": "Anillo Chunky Dorado Ajustable Chapa de Oro",
+      "price": "0.00",
+      "properties": {
+        "type": "Anillo",
+        "color": "Dorado",
+        "talla": "Ajustable",
+        "material": "Chapa de Oro"
+      }
+    },
+    {
+      "image": "anillo-coleccion-bella-sra-pot-ajustable.webp",
+      "name": "Anillo Colección Bella Sra Pot Ajustable",
+      "price": "0.00",
+      "properties": {
+        "type": "Anillo",
+        "color": "Dorado",
+        "talla": "Ajustable",
+        "material": "Aleación de Metales"
+      }
+    },
+    {
+      "image": "anillo-dorado-anti-ansiedad-bolitas.webp",
+      "name": "Anillo Dorado Anti-Ansiedad Bolitas Gira",
+      "price": "0.00",
+      "properties": {
+        "type": "Anillo",
+        "color": "Dorado",
+        "talla": "Ajustable",
+        "material": "Bisutería"
+      }
+    },
+    {
+      "image": "anillo-dorado-conchita-zirconia-acero.webp",
+      "name": "Anillo Dorado Conchita Zirconia Acero Inoxidable",
+      "price": "0.00",
+      "properties": {
+        "type": "Anillo",
+        "color": "Dorado",
+        "talla": "Ajustable",
+        "material": "Acero Inoxidable"
+      }
+    },
+    {
+      "image": "anillo-dorado-hojas-encontradas-acero.webp",
+      "name": "Anillo Dorado Hojas Encontradas Acero Inoxidable",
+      "price": "0.00",
+      "properties": {
+        "type": "Anillo",
+        "color": "Dorado",
+        "talla": "Ajustable",
+        "material": "Acero Inoxidable"
+      }
+    },
+    {
+      "image": "anillo-dorado-luna-zirconia-ajustable-chapa-oro.webp",
+      "name": "Anillo Dorado Luna y Zirconias Ajustable Chapa de Oro",
+      "price": "0.00",
+      "properties": {
+        "type": "Anillo",
+        "color": "Dorado",
+        "talla": "Ajustable",
+        "material": "Chapa de Oro"
+      }
+    },
+    {
+      "image": "anillo-dorado-olivo-acero.webp",
+      "name": "Anillo Dorado Olivo Acero Inoxidable",
+      "price": "0.00",
+      "properties": {
+        "type": "Anillo",
+        "color": "Dorado",
+        "talla": "Ajustable",
+        "material": "Acero Inoxidable"
+      }
+    },
+    {
+      "image": "anillo-oro-plata-estrellitas-acero.webp",
+      "name": "Anillo Oro-Plata Estrellitas Acero Inoxidable",
+      "price": "0.00",
+      "properties": {
+        "type": "Anillo",
+        "color": "Dorado y Plateado",
+        "talla": "Ajustable",
+        "material": "Acero Inoxidable"
+      }
+    },
+    {
+      "image": "anillo-oro-plata-lineas-acero.webp",
+      "name": "Anillo Oro-Plata Lineas Acero Inoxidable",
+      "price": "0.00",
+      "properties": {
+        "type": "Anillo",
+        "color": "Dorado y Plateado",
+        "talla": "Ajustable",
+        "material": "Acero Inoxidable"
+      }
+    },
+    {
+      "image": "anillo-oro-plata-tres-acero.webp",
+      "name": "Anillo Oro-Plata Tres Aros Acero Inoxidable",
+      "price": "0.00",
+      "properties": {
+        "type": "Anillo",
+        "color": "Dorado y Plateado",
+        "talla": "Ajustable",
+        "material": "Acero Inoxidable"
+      }
+    },
+    {
+      "image": "anillo-plateado-anti-ansiedad-bolitas.webp",
+      "name": "Anillo Oro-Plata Tres Aros Acero Inoxidable",
+      "price": "0.00",
+      "properties": {
+        "type": "Anillo",
+        "color": "Dorado y Plateado",
+        "talla": "Ajustable",
+        "material": "Acero Inoxidable"
+      }
+    },
+    {
+      "image": "anillo-plateado-estrella-mar-acero.webp",
+      "name": "Anillo Plateado Estrella de Mar Acero Inoxidable",
+      "price": "0.00",
+      "properties": {
+        "type": "Anillo",
+        "color": "Plateado",
+        "talla": "Ajustable",
+        "material": "Acero Inoxidable"
+      }
+    },
+    {
+      "image": "aretas-dorados-estrella-concha-irregular-acero.webp",
+      "name": "Aretes Dorados Estrella Concha Irregular Acero Inoxidable",
+      "price": "0.00",
+      "properties": {
+        "type": "Aretes",
+        "color": "Dorado",
+        "material": "Acero Inoxidable"
+      }
+    },
+    {
+      "image": "aretes-dorados-cuadrados-zirconia-acero.webp",
+      "name": "Aretes Dorados Cuadros de Zirconia Acero Inoxidable",
+      "price": "0.00",
+      "properties": {
+        "type": "Aretes",
+        "color": "Dorado",
+        "material": "Acero Inoxidable"
+      }
+    },
+    {
+      "image": "aretes-dorados-gran-gota.webp",
+      "name": "Aretes Dorados Gran Gota",
+      "price": "0.00",
+      "properties": {
+        "type": "Aretes",
+        "color": "Dorado",
+        "material": "Cobre"
+      }
+    },
+    {
+      "image": "aretes-dorados-osito-zirconia-lila-chapa.webp",
+      "name": "Aretes Dorados Osito con Zirconia Lila Chapa de Oro",
+      "price": "0.00",
+      "properties": {
+        "type": "Aretes",
+        "color": "Dorado",
+        "material": "Chapa de Oro"
+      }
+    },
+    {
+      "image": "aretes-dorados-vuelta-corazon-chapa-oro.webp",
+      "name": "Aretes Dorados Vuelta de Corazon Chapa de Oro",
+      "price": "0.00",
+      "properties": {
+        "type": "Aretes",
+        "color": "Dorado",
+        "material": "Chapa de Oro"
+      }
+    },
+    {
+      "image": "aretes-dorados-zirconia-acero.webp",
+      "name": "Aretes Dorados Zirconia Acero Inoxidable",
+      "price": "0.00",
+      "properties": {
+        "type": "Aretes",
+        "color": "Dorado",
+        "material": "Acero Inoxidable"
+      }
+    },
+    {
+      "image": "aretes-oro-plata-acero.webp",
+      "name": "Aretes Oro-Plata Acero Inoxidable",
+      "price": "0.00",
+      "properties": {
+        "type": "Aretes",
+        "color": "Dorado y Plateado",
+        "material": "Acero Inoxidable"
+      }
+    },
+    {
+      "image": "aretes-plateados-estrella-mar.webp",
+      "name": "Aretes Plateados Estrella de Mar",
+      "price": "0.00",
+      "properties": {
+        "type": "Aretes",
+        "color": "Plateado",
+        "material": "Bisutería"
+      }
+    },
+    {
+      "image": "collar-cadena-dorada-delgada-acero.webp",
+      "name": "Collar Cadena Dorada Delgada Acero de Titanio",
+      "price": "0.00",
+      "properties": {
+        "type": "Collar",
+        "color": "Dorado",
+        "material": "Acero de Titanio",
+        "medida": "65cm"
+      }
+    },
+    {
+      "image": "collar-cadena-dorada-kroll-acero.webp",
+      "name": "Collar Cadena Dorada Kroll Acero Inoxidable",
+      "price": "0.00",
+      "properties": {
+        "type": "Collar",
+        "color": "Dorado",
+        "material": "Acero Inoxidable",
+        "medida": "60cm"
+      }
+    },
+    {
+      "image": "collar-cadena-plateada-delgada-acero.webp",
+      "name": "Collar Cadena Plateada Delgada Acero de Titanio",
+      "price": "0.00",
+      "properties": {
+        "type": "Collar",
+        "color": "Plateado",
+        "material": "Acero de Titanio",
+        "medida": "55cm"
+      }
+    },
+    {
+      "image": "collar-dorado-luna-acero-titanio.webp",
+      "name": "Collar Dorado Luna Acero de Titanio",
+      "price": "0.00",
+      "properties": {
+        "type": "Collar",
+        "color": "Plateado",
+        "material": "Acero Inoxidable"
+      }
+    },
+    {
+      "image": "pulsera-hojas-laurel-plateada-acero.webp",
+      "name": "Pulsera Hojas Laurel Plateada Acero Inoxidable",
+      "price": "0.00",
+      "properties": {
+        "type": "Pulsera",
+        "color": "Plateado",
+        "material": "Acero Inoxidable"
+      }
+    },
+    {
+      "image": "pulsera-plateada-nudo-marinero.webp",
+      "name": "Pulsera Plateada Nudo Marinero",
+      "price": "0.00",
+      "properties": {
+        "type": "Pulsera",
+        "color": "Plateado",
+        "material": "Metalica"
+      }
+    },
+    {
+      "image": "tobillera-dorada-corazon-delicado-acero.webp",
+      "name": "Tobillera Dorada Corazon Delicado Acero Inoxidable",
+      "price": "0.00",
+      "properties": {
+        "type": "Tobillera",
+        "color": "Dorado",
+        "material": "Acero Inoxidable"
+      }
+    },
+    {
+      "image": "tobillera-dorada-kroll-acero.jpg",
+      "name": "Tobillera Dorada Kroll Acero Inoxidable",
+      "price": "0.00",
+      "properties": {
+        "type": "Tobillera",
+        "color": "Dorado",
+        "material": "Acero Inoxidable"
+      }
+    }
+  ]
+}
