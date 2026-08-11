@@ -26,5 +26,9 @@
     "@tailwindcss/vite": "^4.3.3",
     "bootstrap-icons": "^1.13.1",
     "tailwindcss": "^4.3.3"
+  },
+  "imports": {
+    "#components/*": "./src/components/*",
+    "#definitions/*": "./definition/*"
   }
 }
