@@ -8,13 +8,22 @@
     <link href="/src/style.css" rel="stylesheet">
     <link rel="icon" type="image/svg+xml" href="DIAB-W.svg">
   </head>
-  <body class="h-dvh w-full flex justify-center">
+  <body class="h-dvh w-full flex flex-col items-center">
     <section class="flex flex-col w-105 sm:px-1 py-4">
-      <header class="w-full">
+      <header class="w-full relative">
+        <div id="modalUsAction" class="absolute top-0 right-1">
+          <i class="bi bi-chat-heart"></i>
+        </div>
         <div class="w-full flex justify-center">
           <img class="w-25" src="DIAB-B.svg" alt="logo-dia-b">
         </div>
       </header>
+      <section class="w-full flex justify-end">
+        <p id="modalFilterAction" class="flex gap-0.5 text-xs">
+          <i class="bi bi-funnel-fill"></i>
+          Filtrar
+        </p>
+      </section>
       <main id="products"></main>
       <footer class="w-full">
         <div class="w-full flex justify-center">
@@ -24,6 +33,23 @@
         </div>
       </footer>
     </section>
-    <div id="modal" class="absolute w-dvw h-dvh bg-gray-400 bg-opacity-75 top-0"></div>
+    <section class="w-full flex justify-center">
+      <dialog id="modalUs" class="w-105 p-1 m-auto rounded backdrop:bg-black/70 relative flex flex-col">
+        <div class="absolute top-0 right-0" id="closeModalUsAction">
+          <i class="bi bi-x"></i>
+        </div>
+        <div>
+          <p>Es es un mensaje</p>
+        </div>
+      </dialog>
+      <dialog id="modalFilter" class="w-105 p-1 m-auto rounded backdrop:bg-black/70 relative flex flex-col">
+        <div class="absolute top-0 right-0" id="closeModalFilterAction">
+          <i class="bi bi-x"></i>
+        </div>
+        <div>
+          <p>Estos son filtros</p>
+        </div>
+      </dialog>
+    </section>
   </body>
 </html>
