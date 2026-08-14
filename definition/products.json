@@ -173,7 +173,8 @@
         "type": "Aretes",
         "color": "Dorado",
         "material": "Acero Inoxidable"
-      }
+      },
+      "soldout": true
     },
     {
       "image": "aretes-dorados-gran-gota.webp",

@@ -20,7 +20,7 @@ const Product = (product) => {
       <div class="relative flex content-center items-center w-100 h-100">
         ${
           product.soldout
-            ? "<div class=\"absolute top-0 w-full flex justify-end pr-1\"><span class=\"text-red-500\">AGOTADO</span></div>"
+            ? "<div class=\"absolute top-1 right-1 w-full flex justify-end pr-1\"><span class=\"text-white bg-red-500 rounded px-1 text-[8px]\">AGOTADO</span></div>"
             : ""
         }
         <img src="${escapeHtml(product.image)}" alt="${name}" class="w-full h-full rounded-xl aspect-square" />
