@@ -1,6 +1,6 @@
 # Dia B — Inventario
 
-Catálogo web de productos (bisutería y accesorios) para el inventario de **Dia B**. La app renderiza una lista de artículos a partir de un JSON, con imagen, nombre, precio y propiedades (tipo, color, talla, material, etc.).
+Catálogo web de productos (joyería y accesorios) para el inventario de **Día B**. La app renderiza una lista de artículos a partir de un JSON, con imagen, nombre, precio y propiedades (tipo, color, talla, material, etc.).
 
 ## Stack
 
@@ -21,13 +21,20 @@ pnpm install
 pnpm dev
 ```
 
+Copia [`.env.example`](.env.example) a `.env` y ajusta la URL canónica si tu dominio no es `https://diab.mx`:
+
+```bash
+cp .env.example .env
+```
+
 Otros scripts:
 
-| Comando         | Descripción                          |
-| --------------- | ------------------------------------ |
-| `pnpm dev`      | Servidor de desarrollo               |
-| `pnpm build`    | Build de producción en `dist/`       |
-| `pnpm preview`  | Vista previa del build de producción |
+| Comando            | Descripción                                      |
+| ------------------ | ------------------------------------------------ |
+| `pnpm dev`         | Servidor de desarrollo                           |
+| `pnpm build`       | Build de producción en `dist/`                   |
+| `pnpm preview`     | Vista previa del build de producción             |
+| `pnpm seo:assets`  | Regenera `og-image.jpg` y `apple-touch-icon.png` |
 
 ## Estructura
 
@@ -35,14 +42,41 @@ Otros scripts:
 b-day-inventory/
 ├── definition/
 │   └── products.json    # Catálogo de productos
-├── public/              # Imágenes y assets estáticos
+├── public/              # Imágenes, robots.txt, sitemap, OG assets
+├── scripts/
+│   └── generate-seo-assets.mjs
 ├── src/
 │   ├── components/      # UI (products, product, property, icon)
+│   ├── seo/             # Metadata + plugin Vite de SEO
 │   ├── index.mjs        # Entrada de la app
 │   └── style.css        # Tailwind + Bootstrap Icons
 ├── index.html
 └── vite.config.js
 ```
+
+## SEO
+
+El plugin en [`src/seo/vite-plugin-seo.mjs`](src/seo/vite-plugin-seo.mjs) inyecta en cada build/dev:
+
+- Meta description, robots, canonical, theme-color
+- Open Graph y Twitter Card
+- JSON-LD (`Store`, `WebSite`, `ItemList` de productos desde `products.json`)
+- `public/robots.txt` y `public/sitemap.xml` con la URL canónica
+
+Configuración de marca y textos: [`src/seo/site.mjs`](src/seo/site.mjs).
+
+Variable de entorno:
+
+| Variable         | Default            | Uso                                      |
+| ---------------- | ------------------ | ---------------------------------------- |
+| `VITE_SITE_URL`  | `https://diab.mx`  | Canonical, OG, sitemap y URLs en JSON-LD |
+
+### Checklist post-deploy
+
+1. Confirmar `VITE_SITE_URL` apunta al dominio real antes del build.
+2. Validar preview social (Facebook Sharing Debugger / Twitter Card Validator).
+3. Enviar `sitemap.xml` en Google Search Console.
+4. Si cambias logo o producto hero: `pnpm seo:assets`.
 
 ## Catálogo de productos
 
@@ -64,12 +98,13 @@ Los productos viven en [`definition/products.json`](definition/products.json). C
 
 ### Campos
 
-| Campo        | Descripción                                                                 |
-| ------------ | --------------------------------------------------------------------------- |
-| `image`      | Nombre del archivo en `public/`                                             |
-| `name`       | Nombre visible                                                              |
-| `price`      | Precio en MXN (se formatea con `Intl.NumberFormat`)                         |
-| `properties` | Atributos mostrados sobre la imagen; las claves se mapean a iconos          |
+| Campo        | Descripción                                                        |
+| ------------ | ------------------------------------------------------------------ |
+| `image`      | Nombre del archivo en `public/`                                    |
+| `name`       | Nombre visible                                                     |
+| `price`      | Precio en MXN (se formatea con `Intl.NumberFormat`)                |
+| `properties` | Atributos mostrados sobre la imagen; las claves se mapean a iconos |
+| `soldout`    | Opcional; marca agotado en UI y en JSON-LD                         |
 
 Propiedades con icono: `type`, `color`, `material`, `size`, `talla`, `medida`.
 

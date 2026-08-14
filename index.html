@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dia B</title>
+    <title>Día B</title>
     <script type="module" src="/src/index.mjs"></script>
     <link href="/src/style.css" rel="stylesheet">
     <link rel="icon" type="image/svg+xml" href="DIAB-W.svg">
@@ -11,14 +11,16 @@
   <body class="h-dvh w-full flex flex-col items-center">
     <section class="flex flex-col w-105 sm:px-1 py-4">
       <header class="w-full relative">
-        <div id="modalUsAction" class="absolute top-0 right-1">
+        <div id="modalUsAction" class="absolute top-0 right-4">
           <i class="bi bi-chat-heart"></i>
         </div>
         <div class="w-full flex justify-center">
-          <img class="w-25" src="DIAB-B.svg" alt="logo-dia-b">
+          <h1 class="m-0">
+            <img class="w-25" src="DIAB-B.svg" alt="Día B">
+          </h1>
         </div>
       </header>
-      <section class="w-full flex justify-end">
+      <section class="w-full hidden justify-end">
         <p id="modalFilterAction" class="flex gap-0.5 text-xs">
           <i class="bi bi-funnel-fill"></i>
           Filtrar
@@ -34,15 +36,22 @@
       </footer>
     </section>
     <section class="w-full flex justify-center">
-      <dialog id="modalUs" class="w-105 p-1 m-auto rounded backdrop:bg-black/70 relative flex flex-col">
+      <dialog id="modalUs" class="w-105 m-auto rounded backdrop:bg-black/70 relative hidden gap-6 p-4">
         <div class="absolute top-0 right-0" id="closeModalUsAction">
           <i class="bi bi-x"></i>
         </div>
+        <div class="w-full flex justify-center">
+          <img class="w-25" src="DIAB-B.svg" alt="Día B">
+        </div>
         <div>
-          <p>Es es un mensaje</p>
+          <div class="w-full text-xs flex flex-col gap-2">
+            <p>DÍA B nació con mucho amore para construir un sueño. Cada joya que eliges es mucho más que una compra : es un paso más hacia el día en que diremos "sí, acepto".</p>
+            <p>Gracias por formar parte de este capítulo tan especial de nuestras vidas.</p>
+            <p class="font-bold">¡Gracias por ser parte de nuestro Día B!</p>
+          </div>
         </div>
       </dialog>
-      <dialog id="modalFilter" class="w-105 p-1 m-auto rounded backdrop:bg-black/70 relative flex flex-col">
+      <dialog id="modalFilter" class="w-105 p-1 m-auto rounded backdrop:bg-black/70 relative hidden flex-col">
         <div class="absolute top-0 right-0" id="closeModalFilterAction">
           <i class="bi bi-x"></i>
         </div>

@@ -1,2 +1,20 @@
 @import "tailwindcss";
-@import "bootstrap-icons/font/bootstrap-icons.css"
+@import "bootstrap-icons/font/bootstrap-icons.css";
+
+:root {
+  --black: #222a1;
+  --olive-dark: #53694a;
+  --olive-light: #8aa379;
+}
+
+.color-custom-black {
+  color: var(--black);
+}
+
+.color-custom-olive-dark {
+  color: var(--olive-dark);
+}
+
+.color-custom-olive-light {
+  color: var(--olive-light);
+}
