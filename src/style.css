@@ -18,3 +18,28 @@
 .color-custom-olive-light {
   color: var(--olive-light);
 }
+
+@keyframes heartbeat {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  14% {
+    transform: scale(1.22);
+  }
+  28% {
+    transform: scale(1);
+  }
+  42% {
+    transform: scale(1.18);
+  }
+  70% {
+    transform: scale(1);
+  }
+}
+
+.animate-heartbeat {
+  display: inline-block;
+  animation: heartbeat 1.4s ease-in-out infinite;
+  transform-origin: center;
+}
