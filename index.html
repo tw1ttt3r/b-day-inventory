@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Día B</title>
-    <script type="module" src="/src/index.mjs"></script>
+    <script type="module" src="/src/index.mjs" defer></script>
     <link href="/src/style.css" rel="stylesheet">
     <link rel="icon" type="image/svg+xml" href="DIAB-W.svg">
   </head>
-  <body class="h-dvh w-full flex flex-col items-center">
-    <section class="flex flex-col w-105 sm:px-1 py-4">
+  <body class="min-h-dvh w-full flex flex-col items-center">
+    <section class="flex flex-col w-105 sm:px-1 py-4 relative">
       <header class="w-full relative">
         <div id="modalUsAction" class="absolute top-0 right-6">
           <i class="bi bi-chat-heart text-3xl animate-heartbeat"></i>
@@ -36,7 +36,7 @@
       </footer>
     </section>
     <section class="w-full flex justify-center">
-      <dialog id="modalUs" class="w-105 m-auto rounded backdrop:bg-black/70 relative hidden gap-6 p-4">
+      <dialog id="modalUs" class="app-dialog w-105 rounded backdrop:bg-black/70 relative hidden gap-6 p-4">
         <div class="absolute top-0 right-0" id="closeModalUsAction">
           <i class="bi bi-x"></i>
         </div>
@@ -51,7 +51,7 @@
           </div>
         </div>
       </dialog>
-      <dialog id="modalFilter" class="w-105 p-1 m-auto rounded backdrop:bg-black/70 relative hidden flex-col">
+      <dialog id="modalFilter" class="app-dialog w-105 p-1 rounded backdrop:bg-black/70 relative hidden flex-col">
         <div class="absolute top-0 right-0" id="closeModalFilterAction">
           <i class="bi bi-x"></i>
         </div>
@@ -59,6 +59,20 @@
           <p>Estos son filtros</p>
         </div>
       </dialog>
+      <dialog id="modalCart" class="app-dialog w-105 p-1 rounded backdrop:bg-black/70 relative hidden flex-col">
+        <div class="absolute top-0 right-0" id="closeModalCartAction">
+          <i class="bi bi-x"></i>
+        </div>
+        <div id="products-container" class="h-65 overflow-y pt-4 px-3 flex justify-center items-center">
+          <i class="bi bi-cart-x text-5xl"></i>
+        </div>
+        <div class="flex justify-end">
+          <button id="cart-confirm-button" type="button" disabled class="bg-olive-dark p-0.5 rounded text-white font-bold">Confirmar <i class="bi bi-whatsapp"></i></button>
+        </div>
+      </dialog>
     </section>
+    <button type="button" class="floating-button rounded-full flex justify-center items-center border h-7 w-7 cursor-pointer">
+      <i class="bi bi-cart4"></i>
+    </button>
   </body>
 </html>
