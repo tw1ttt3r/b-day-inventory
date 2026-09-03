@@ -1,14 +1,16 @@
+import { url } from "#core/vars.mjs";
+
 /** Site metadata for SEO (meta tags, Open Graph, JSON-LD). */
 
 export const site = {
   name: "Día B",
   title: "Día B — Catálogo de joyería y accesorios",
   description:
-    "Catálogo de Día B: anillos, aretes, collares, pulseras y tobilleras. Joyería con mucho amore.",
+    "Catálogo de Día B: anillos, aretes, collares, pulseras y tobilleras. Joyería con mucho amor.",
   locale: "es_MX",
   language: "es",
-  defaultUrl: "https://dia-b.com/",
-  ogImagePath: "/DIAB-B.svg",
+  defaultUrl: url,
+  ogImagePath: "/DIAB-B.png",
   themeColor: "#1d1d1b",
   twitterCard: "summary_large_image",
 };
