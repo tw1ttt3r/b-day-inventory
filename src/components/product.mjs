@@ -1,26 +1,49 @@
 import Property from "#components/property.mjs";
+import Icon from "#components/icon.mjs";
+import { addProductCart } from "#core/store.mjs";
+import { escapeHtml, getMoney } from "#core/common.mjs";
+import { time } from "#core/vars.mjs";
 
-const escapeHtml = (value) =>
-  String(value)
-    .replace(/&/g, "&amp;")
-    .replace(/</g, "&lt;")
-    .replace(/>/g, "&gt;")
-    .replace(/"/g, "&quot;");
+export const addProduct = (product) => {
+  addProductCart(product);
+};
+
+export const changeIcon = (button) => {
+  const icon = button.querySelector("i");
+  if (!icon) return;
+
+  icon.classList.remove("bi-plus-circle");
+  icon.classList.add("bi-check2");
+
+  const previousTimer = Number(button.dataset.iconResetTimer);
+  if (previousTimer) {
+    clearTimeout(previousTimer);
+  }
+
+  const timeoutId = window.setTimeout(() => {
+    icon.classList.remove("bi-check2");
+    icon.classList.add("bi-plus-circle");
+    delete button.dataset.iconResetTimer;
+  }, time);
+
+  button.dataset.iconResetTimer = String(timeoutId);
+};
 
 const Product = (product) => {
   const props = Object.entries(product.properties);
   const name = escapeHtml(product.name);
-  const money = new Intl.NumberFormat("es-MX", {
-    style: "currency",
-    currency: "MXN",
-  }).format(Number(product.price));
+  const money = getMoney(product.price);
+  const addHandler = `changeIcon(this);addProduct(${JSON.stringify(product)})`;
 
   return `
     <article class="flex flex-col items-center w-full">
       <div class="relative flex content-center items-center w-100 h-100">
+        <button type="button" onclick='${addHandler}' class="absolute bg-gray-50 rounded-full top-2 right-2 border-0 flex justify-center items-center h-7 w-7 cursor-pointer ${ product.soldout ? "hidden" : ""}">
+          ${Icon("plus-circle")}
+        </button>
         ${
           product.soldout
-            ? "<div class=\"absolute top-1 right-1 w-full flex justify-end pr-1\"><span class=\"text-white bg-red-500 rounded px-1 text-[8px]\">AGOTADO</span></div>"
+            ? "<div class=\"absolute top-2 right-1 w-full flex justify-end pr-1\"><span class=\"text-white bg-red-500 rounded px-1 text-[8px]\">AGOTADO</span></div>"
             : ""
         }
         <img src="${escapeHtml(product.image)}" alt="${name}" class="w-full h-full rounded-xl aspect-square" />
