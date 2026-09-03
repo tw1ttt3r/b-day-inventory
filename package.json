@@ -12,7 +12,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "packageManager": "pnpm@11.21.0",
+  "packageManager": "pnpm@11.24.0",
   "type": "module",
   "devDependencies": {
     "sharp": "^0.35.3",
@@ -25,6 +25,7 @@
   },
   "imports": {
     "#components/*": "./src/components/*",
-    "#definitions/*": "./definition/*"
+    "#definitions/*": "./definition/*",
+    "#core/*": "./src/core/*"
   }
 }
